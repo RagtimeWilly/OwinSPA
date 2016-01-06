@@ -20,9 +20,9 @@ namespace OwinSPA.Host
             );
 
 #if DEBUG
-            var physicalFileSystem = new PhysicalFileSystem(@"..\..\web");
+            var physicalFileSystem = new PhysicalFileSystem(@"..\..\Web");
 #else
-            var physicalFileSystem = new PhysicalFileSystem("web");
+            var physicalFileSystem = new PhysicalFileSystem("Web");
 #endif
 
             var options = new FileServerOptions
